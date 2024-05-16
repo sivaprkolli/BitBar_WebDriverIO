@@ -7,14 +7,14 @@ export const config = {
         runner: 'local',
     
         suites: {
-            smoke: ['./uploadfile.e2e.js'],
+            smoke: ['./uploadfile_test.js'],
         },
     
-        specs: ["./uploadfile.e2e.js"],
+        specs: ["./uploadfile_test.js"],
     
         exclude: [],
     
-        maxInstances: 10,
+        maxInstances: 1,
     
         capabilities: [{
             browserName: 'chrome'
@@ -26,9 +26,9 @@ export const config = {
     
         baseUrl: "https://online2pdf.com",
     
-        waitforTimeout: 10000,
+        waitforTimeout: 100000,
     
-        connectionRetryTimeout: 120000,
+        connectionRetryTimeout: 1200000,
     
         connectionRetryCount: 3,
     

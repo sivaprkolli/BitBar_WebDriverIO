@@ -1,5 +1,5 @@
 {
-  "name": "WebDriverIOTest",
+  "name": "WebDriverIO Upload Test",
   "type": "module",
   "devDependencies": {
     "@wdio/firefox-profile-service": "^8.36.1",
@@ -10,5 +10,8 @@
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
     "upload": "wdio run ./upload.conf.js"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }
